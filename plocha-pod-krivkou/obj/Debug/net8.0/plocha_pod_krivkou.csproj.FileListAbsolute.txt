@@ -1,0 +1,15 @@
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/plocha_pod_krivkou/bin/Debug/net8.0/plocha_pod_krivkou
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/plocha_pod_krivkou/bin/Debug/net8.0/plocha_pod_krivkou.deps.json
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/plocha_pod_krivkou/bin/Debug/net8.0/plocha_pod_krivkou.runtimeconfig.json
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/plocha_pod_krivkou/bin/Debug/net8.0/plocha_pod_krivkou.dll
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/plocha_pod_krivkou/bin/Debug/net8.0/plocha_pod_krivkou.pdb
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/plocha_pod_krivkou/obj/Debug/net8.0/plocha_pod_krivkou.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/plocha_pod_krivkou/obj/Debug/net8.0/plocha_pod_krivkou.AssemblyInfoInputs.cache
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/plocha_pod_krivkou/obj/Debug/net8.0/plocha_pod_krivkou.AssemblyInfo.cs
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/plocha_pod_krivkou/obj/Debug/net8.0/plocha_pod_krivkou.csproj.CoreCompileInputs.cache
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/plocha_pod_krivkou/obj/Debug/net8.0/plocha_pod_krivkou.sourcelink.json
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/plocha_pod_krivkou/obj/Debug/net8.0/plocha_pod_krivkou.dll
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/plocha_pod_krivkou/obj/Debug/net8.0/refint/plocha_pod_krivkou.dll
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/plocha_pod_krivkou/obj/Debug/net8.0/plocha_pod_krivkou.pdb
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/plocha_pod_krivkou/obj/Debug/net8.0/plocha_pod_krivkou.genruntimeconfig.cache
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/plocha_pod_krivkou/obj/Debug/net8.0/ref/plocha_pod_krivkou.dll

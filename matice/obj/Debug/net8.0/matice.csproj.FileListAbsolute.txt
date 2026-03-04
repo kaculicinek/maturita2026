@@ -1,0 +1,15 @@
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/matice/bin/Debug/net8.0/matice
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/matice/bin/Debug/net8.0/matice.deps.json
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/matice/bin/Debug/net8.0/matice.runtimeconfig.json
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/matice/bin/Debug/net8.0/matice.dll
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/matice/bin/Debug/net8.0/matice.pdb
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/matice/obj/Debug/net8.0/matice.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/matice/obj/Debug/net8.0/matice.AssemblyInfoInputs.cache
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/matice/obj/Debug/net8.0/matice.AssemblyInfo.cs
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/matice/obj/Debug/net8.0/matice.csproj.CoreCompileInputs.cache
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/matice/obj/Debug/net8.0/matice.sourcelink.json
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/matice/obj/Debug/net8.0/matice.dll
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/matice/obj/Debug/net8.0/refint/matice.dll
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/matice/obj/Debug/net8.0/matice.pdb
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/matice/obj/Debug/net8.0/matice.genruntimeconfig.cache
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/matice/obj/Debug/net8.0/ref/matice.dll
