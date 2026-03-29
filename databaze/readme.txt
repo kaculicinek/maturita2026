@@ -1,0 +1,1 @@
+pouziva dvorakuv engine na sql

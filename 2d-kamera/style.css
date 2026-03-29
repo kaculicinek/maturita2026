@@ -1,0 +1,29 @@
+body{
+  overflow: hidden;
+  margin: 0px;
+}
+
+.viewport{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.scene{
+  width: 2000px;
+  height: 1300px;
+  background-color: rgb(132, 232, 227);
+  position:absolute;
+}
+
+.movableObject{
+  width: 70px;
+  height: 70px;
+  background-color: LightSeaGreen;
+  position: absolute;
+}
+
+button{
+  position: absolute;
+}

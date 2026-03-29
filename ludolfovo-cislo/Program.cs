@@ -1,197 +1,103 @@
-﻿
-using System.IO.Pipes;
-using System.Reflection;
-using System.Runtime.ConstrainedExecution;
-
-double eulerovo_cislo(int n)
+double EulerovaFunkce(double n)
 {
-    double vysledek = 0;
-    double mezivysledek = 0;
-    int a_1 = 1;
-    for (int i = 0; i < n; i++)
+    double a1 = 1;
+    double aktualniA;
+    double soucet = a1;
+    double ziskaniPI;
+
+    for (int i = 2; i < n + 2; i++)
     {
-        double vzorecek = 1 / (Math.Pow(a_1, 2));
-        mezivysledek += vzorecek;
-        a_1 += 1;
+        aktualniA = 1 / Math.Pow(i, 2);
+        soucet += aktualniA;
     }
 
-    vysledek = Math.Sqrt(mezivysledek * 6);
+    ziskaniPI = Math.Sqrt(soucet * 6);
 
-    return vysledek;
+    return ziskaniPI;
 }
 
-double Leibnizovo_cislo(int n)
+double LeibnizovaFunkce(double n)
 {
-    double vysledek = 0;
-    double mezivysledek = 0;
-    int a_1 = 1;
-    for (int i = 0; i < n; i++)
+    int a1 = 1;
+    double aktualniA;
+    double soucet = a1;
+    double ziskaniPI;
+
+    for (int i = 2; i < n + 2; i++)
     {
-        double vzorecek = Math.Pow(-1, a_1 - 1) / (2 * a_1 - 1);
-        mezivysledek += vzorecek;
-        a_1 += 1;
+        aktualniA = Math.Pow(-1, i - 1) / (2 * i - 1);
+        soucet += aktualniA;
     }
 
-    vysledek = mezivysledek * 4;
-
-    return vysledek;
+    ziskaniPI = soucet * 4;
+    return ziskaniPI;
 }
 
-double vietovo_cislo(int n)
+double VietovaFunkce(double n)
 {
-    double vysledek;
-    double a_1 = Math.Sqrt(1.0 / 2);
-    double a_predchozi = a_1;
-    double mezivysledek = a_1;
+    double predchoziA = Math.Sqrt(1.0 / 2);
+    double aktualniA;
+    double soucin = predchoziA;
+    double ziskaniPI;
 
-    for (int i = 0; i < n; i++)
+    for (int i = 2; i < n + 2; i++)
     {
-        double a_n = Math.Sqrt(1.0 / 2 + (1.0 / 2) * a_predchozi);
-        a_predchozi = a_n;
-        mezivysledek = mezivysledek * a_n;
+        aktualniA = Math.Sqrt((1.0 / 2) + ((1.0 / 2) * predchoziA));
+        predchoziA = aktualniA;
+        soucin *= aktualniA;
     }
 
-    vysledek = 2 / mezivysledek;
-
-    return vysledek;
+    ziskaniPI = 2 / soucin;
+    return ziskaniPI;
 }
 
-// = a1 * a2 * a3 * ... an
-// Math.PI
-// presnost na x deset mist = napr. 4 => hledam PI 3.1415
-// 1..10000
-// fce1 => N=56
-// fce2 => N=2000
-// fce3 => N=400
-
-///
-/// Priklad:
-///     pozadovana_presnost < (Math.PI - x)
-///     0.01 < 3.1415926 - 3.561 => FALSE
-///     0.01 < 3.1415926 - 3.422 => FALSE
-///     0.01 < 3.1415926 - 3.138 => TRUE
-// bool ma_pi_dostatecnou_presnost(double x, double pozadovana_presnost) {}
-
-// void porovnavani_funkci(int pocet_desetinnych_mist)
-// {
-// fce1, fce2, fce3 pro vypocet PI
-
-// vypocitej PI pomoci fce1 s presnosti na pocet_desetinnych_mist
-//      volej fce1 se zvysujicim se poctem iteraci dokud nedostanu PI s danou presnosti    
-
-// vypocitej PI pomoci fce2 s presnosti na pocet_desetinnych_mist
-
-// vypocitej PI pomoci fce3 s presnosti na pocet_desetinnych_mist
-
-// serad fce1, fce2, fce3 podle toho, kolik potrebovali iteraci k dosazeni PI s danou presnosti
-
-// }
-
-
-void porovnavani_funkci(int pocet_desetinnych_mist)
+void PorovnejFunkce(double pozadovanaPresnost)
 {
-    //seradit funkce podle nejnizsiho cisla (n) ktere dojde k vysledku
-    double euler;
-    double leibniz;
-    double viet;
+    bool EulerPridan = false;
+    bool LeibnizPridan = false;
+    bool VietPridan = false;
 
     double pi = Math.PI;
-    string pi_ve_string = pi.ToString();
-    int cela_delka_pi = pi_ve_string.Count();
-    string pozadovana_delka_pi = pi_ve_string.Remove(pocet_desetinnych_mist + 2);
-    
-    Console.WriteLine("Pozadovana presnost pi: " + pozadovana_delka_pi);
-    Console.WriteLine();
+    double n = 1000;
 
-    int n_euler = 0;
-    int n_leibniz = 0;
-    int n_viet = 0;
+    List<(string nazev, double n)> vysledky = new List<(string nazev, double n)>();
 
-    for (int i = 1; n_euler == 0 || n_leibniz == 0 || n_viet == 0; i++)
+    for(int i = 1; i < n && vysledky.Count <3; i++)
     {
-        if (n_euler == 0)
+        if(Math.Abs(pi - EulerovaFunkce(i)) <= pozadovanaPresnost && EulerPridan==false)
         {
-            euler = eulerovo_cislo(i);
-            if (euler.ToString().StartsWith(pozadovana_delka_pi) && n_euler == 0)
-            {
-                n_euler = i;
-            }
-        }
-        if (n_leibniz == 0)
-        {
-            leibniz = Leibnizovo_cislo(i);
-            if (leibniz.ToString().StartsWith(pozadovana_delka_pi) && n_leibniz == 0)
-            {
-                n_leibniz = i;
-            }
+            vysledky.Add(("Eulerovo cislo", i));
+            Console.WriteLine("Eulerovo cislo: " + $"n = {i}, {vysledky.Count}.");
+            EulerPridan = true;
         }
 
-        if (n_viet == 0)
+        if(Math.Abs(pi - LeibnizovaFunkce(i)) <= pozadovanaPresnost && LeibnizPridan==false)
         {
-            viet = vietovo_cislo(i);
-            if (viet.ToString().StartsWith(pozadovana_delka_pi) && n_viet == 0)
-            {
-                n_viet = i;
-            }
+            vysledky.Add(("Leibnizovo cislo", i));
+            Console.WriteLine("Leibnizovo cislo: " + $"n = {i}, {vysledky.Count}.");
+            LeibnizPridan = true;
+        }
+
+        if(Math.Abs(pi - VietovaFunkce(i)) <= pozadovanaPresnost && VietPridan==false)
+        {
+            vysledky.Add(("Vietovo cislo", i));
+            Console.WriteLine("Vietovo cislo: " + $"n = {i}, {vysledky.Count}.");
+            VietPridan = true;
         }
     }
-
-    string nejrychlejsi = "";
-    string prostredni = "";
-    string nejpomalejsi = "";
-
-    int[] vysledky =  {n_euler, n_leibniz, n_viet };
-    Array.Sort(vysledky);
-
-    if (vysledky[0] == n_euler)
-    {
-        nejrychlejsi = $"Eulerova posloupnost {n_euler} clenu";
-    }
-    else if(vysledky[0] == n_leibniz)
-    {
-        nejrychlejsi = $"Leibnizova posloupnst {n_leibniz} clenu";
-    }
-    else if(vysledky[0] == n_viet)
-    {
-        nejrychlejsi = $"Vietova posloupnost {n_viet} clenu";
-    }
-
-    if (vysledky[1] == n_euler)
-    {
-        prostredni = $"Eulerova posloupnost {n_euler} clenu";
-    }
-    else if(vysledky[1] == n_leibniz)
-    {
-        prostredni = $"Leibnizova posloupnst {n_leibniz} clenu";
-    }
-    else if(vysledky[1] == n_viet)
-    {
-        prostredni = $"Vietova posloupnost {n_viet} clenu";
-    }
-
-    if (vysledky[2] == n_euler)
-    {
-        nejpomalejsi = $"Eulerova posloupnost {n_euler} clenu";
-    }
-    else if(vysledky[2] == n_leibniz)
-    {
-        nejpomalejsi = $"Leibnizova posloupnst {n_leibniz} clenu";
-    }
-    else if(vysledky[2] == n_viet)
-    {
-        nejpomalejsi = $"Vietova posloupnost {n_viet} clenu";
-    }
-
-    Console.WriteLine("Nejrychlejsi: " + nejrychlejsi);
-    Console.WriteLine("Prostredni: " + prostredni);
-    Console.WriteLine("Nejpomalejsi: " + nejpomalejsi);
-    Console.WriteLine();
-
 }
 
 Console.Clear();
-Console.WriteLine("Eulerovo cislo: " + eulerovo_cislo(11000));
-Console.WriteLine("Leibnizovo cislo: " + Leibnizovo_cislo(500));
-Console.WriteLine("Vietovo cislo: " + vietovo_cislo(3));
+Console.WriteLine("PI: " + Math.PI);
 Console.WriteLine();
-porovnavani_funkci(4);
+
+// Console.WriteLine("eulerova metoda: " + EulerovaFunkce(300));
+// Console.WriteLine("Leibnizova metoda: " + LeibnizovaFunkce(600));
+// Console.WriteLine("Vietova metoda: " + VietovaFunkce(100));
+Console.WriteLine();
+Console.WriteLine("Porovnani aproximaci PI: ");
+Console.WriteLine();
+
+PorovnejFunkce(0.001);
+
+

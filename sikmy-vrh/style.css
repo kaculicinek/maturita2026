@@ -1,0 +1,51 @@
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper{
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.panel{
+  width: 30vw;
+  height: 100vh;
+  background-color: bisque;
+  border: 2px solid black;
+}
+
+.viewport{
+  width: 70vw;
+  height: 100vh;
+  background-color:burlywood;
+  border: 2px solid black;
+  position: relative;
+}
+
+.inputLabel{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+input{
+  margin-left: 20px;
+}
+
+button{
+  width: 100px;
+  height: 30px;
+  margin: 20px;
+}
+
+.mic{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color:rgb(61, 45, 24);
+  position: absolute;
+}
