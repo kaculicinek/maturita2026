@@ -1,0 +1,15 @@
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/ludolfovo_cislo/bin/Debug/net8.0/ludolfovo_cislo
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/ludolfovo_cislo/bin/Debug/net8.0/ludolfovo_cislo.deps.json
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/ludolfovo_cislo/bin/Debug/net8.0/ludolfovo_cislo.runtimeconfig.json
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/ludolfovo_cislo/bin/Debug/net8.0/ludolfovo_cislo.dll
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/ludolfovo_cislo/bin/Debug/net8.0/ludolfovo_cislo.pdb
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/ludolfovo_cislo/obj/Debug/net8.0/ludolfovo_cislo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/ludolfovo_cislo/obj/Debug/net8.0/ludolfovo_cislo.AssemblyInfoInputs.cache
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/ludolfovo_cislo/obj/Debug/net8.0/ludolfovo_cislo.AssemblyInfo.cs
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/ludolfovo_cislo/obj/Debug/net8.0/ludolfovo_cislo.csproj.CoreCompileInputs.cache
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/ludolfovo_cislo/obj/Debug/net8.0/ludolfovo_cislo.dll
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/ludolfovo_cislo/obj/Debug/net8.0/refint/ludolfovo_cislo.dll
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/ludolfovo_cislo/obj/Debug/net8.0/ludolfovo_cislo.pdb
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/ludolfovo_cislo/obj/Debug/net8.0/ludolfovo_cislo.genruntimeconfig.cache
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/ludolfovo_cislo/obj/Debug/net8.0/ref/ludolfovo_cislo.dll
+/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/ludolfovo_cislo/obj/Debug/net8.0/ludolfovo_cislo.sourcelink.json

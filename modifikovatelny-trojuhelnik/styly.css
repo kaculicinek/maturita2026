@@ -1,0 +1,22 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.bod{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border-radius: 50%;
+    cursor: grab;
+    background-color: darkorchid;
+}
+
+.trojuhelnik{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+
+    background-color:plum;
+}
