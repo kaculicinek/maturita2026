@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/vektor/vektor.csproj": {}
+    "/Users/kacik/src/maturita2026/vektor/vektor.csproj": {}
   },
   "projects": {
-    "/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/vektor/vektor.csproj": {
+    "/Users/kacik/src/maturita2026/vektor/vektor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/vektor/vektor.csproj",
+        "projectUniqueName": "/Users/kacik/src/maturita2026/vektor/vektor.csproj",
         "projectName": "vektor",
-        "projectPath": "/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/vektor/vektor.csproj",
+        "projectPath": "/Users/kacik/src/maturita2026/vektor/vektor.csproj",
         "packagesPath": "/Users/kacik/.nuget/packages/",
-        "outputPath": "/Users/kacik/Desktop/Maturita/IVT/prakticke priklady/vektor/obj/",
+        "outputPath": "/Users/kacik/src/maturita2026/vektor/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kacik/.nuget/NuGet/NuGet.Config"

@@ -13,3 +13,18 @@
 /Users/kacik/Desktop/Maturita/IVT/prakticke priklady/vektor/obj/Debug/net8.0/vektor.pdb
 /Users/kacik/Desktop/Maturita/IVT/prakticke priklady/vektor/obj/Debug/net8.0/vektor.genruntimeconfig.cache
 /Users/kacik/Desktop/Maturita/IVT/prakticke priklady/vektor/obj/Debug/net8.0/ref/vektor.dll
+/Users/kacik/src/maturita2026/vektor/bin/Debug/net8.0/vektor
+/Users/kacik/src/maturita2026/vektor/bin/Debug/net8.0/vektor.deps.json
+/Users/kacik/src/maturita2026/vektor/bin/Debug/net8.0/vektor.runtimeconfig.json
+/Users/kacik/src/maturita2026/vektor/bin/Debug/net8.0/vektor.dll
+/Users/kacik/src/maturita2026/vektor/bin/Debug/net8.0/vektor.pdb
+/Users/kacik/src/maturita2026/vektor/obj/Debug/net8.0/vektor.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kacik/src/maturita2026/vektor/obj/Debug/net8.0/vektor.AssemblyInfoInputs.cache
+/Users/kacik/src/maturita2026/vektor/obj/Debug/net8.0/vektor.AssemblyInfo.cs
+/Users/kacik/src/maturita2026/vektor/obj/Debug/net8.0/vektor.csproj.CoreCompileInputs.cache
+/Users/kacik/src/maturita2026/vektor/obj/Debug/net8.0/vektor.sourcelink.json
+/Users/kacik/src/maturita2026/vektor/obj/Debug/net8.0/vektor.dll
+/Users/kacik/src/maturita2026/vektor/obj/Debug/net8.0/refint/vektor.dll
+/Users/kacik/src/maturita2026/vektor/obj/Debug/net8.0/vektor.pdb
+/Users/kacik/src/maturita2026/vektor/obj/Debug/net8.0/vektor.genruntimeconfig.cache
+/Users/kacik/src/maturita2026/vektor/obj/Debug/net8.0/ref/vektor.dll
